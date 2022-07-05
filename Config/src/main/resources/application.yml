@@ -1,6 +1,8 @@
 server:
   port: 8888
 spring:
+  application:
+    name: config-single-server
   cloud:
     config:
       discovery:
@@ -9,9 +11,8 @@ spring:
         encrypt:
           enabled: false
         git:
-          uri: https://github.com/Sheldonccf/DIST_Student_Microservice
-          search-paths:
-            - employeeservice
-
-          username: jdavid-araujo
-          password: f@iry125
+          uri: https://github.com/Sheldonccf/DIST_Student_Microservice #配置文件所在仓库
+          username: Sheldonccf
+          password: Ccf080018@
+          default-label: master #配置文件分支
+          search-paths: Config  #配置文件所在根目录
