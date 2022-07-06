@@ -11,8 +11,11 @@ public class LimitsConfigurationController {
     private Configuration configuration;
 
     @GetMapping("/limits")
-    public LimitConfiguration retrieveLimitsFromConfigurations(){
-        return new LimitConfiguration(1000, 1);
-//        return new LimitConfiguration(configuration.getMaximum(), configuration.getMinimum());
+    public Configuration retrieveLimitsFromConfigurations(){
+//        return new LimitConfiguration(1000, 1);
+//        return new LimitConfiguration(configuration.getUsername(), configuration.getPassword());
+          return configuration;
+
+
     }
 }

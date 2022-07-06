@@ -15,4 +15,4 @@ spring:
           username: Sheldonccf
           password: Ccf080018@
           default-label: master #配置文件分支
-          search-paths: Config  #配置文件所在根目录
+          search-paths: Shared  #配置文件所在根目录
